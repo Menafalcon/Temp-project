@@ -1,21 +1,26 @@
-body{
-background-image: url(Apocalipse.jpg);
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-background-attachment: fixed;
-margin: 0;
-padding: 0;
-font-family: "Special Elite", sans-serif;
+/* Base Styles */
+body {
+    background-image: url(Apocalipse.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: "Special Elite", sans-serif;
 }
 
-.font-special-elite{
-font-family: "Special Elite", sans-serif;
+/* Font Styles */
+.font-special-elite {
+    font-family: "Special Elite", sans-serif;
 }
-.font-yatra-one{
-font-family: "Yatra One", sans-serif;
+
+.font-yatra-one {
+    font-family: "Yatra One", sans-serif;
 }
-#gameicon{
+
+/* Header and Title */
+#gameicon {
     position: absolute;
     width: 50px;
     height: 50px;
@@ -23,22 +28,24 @@ font-family: "Yatra One", sans-serif;
     top: 50%;
     transform: translateY(-50%);
 }
-#headdiv{
+
+#headdiv {
     background-color: rgba(46, 46, 46, 0.661);
     padding: 1px;
     text-align: center;
     position: relative;
 }
-#title{
+
+#title {
     font-family: "Yatra One", sans-serif;
-    text-align: center;
     font-size: 35px;
     margin: 10px;
     font-weight: 900;
     text-shadow: 2px 2px 25px rgb(233, 144, 65);
 }
 
-#navbar ul{
+/* Navigation Bar */
+#navbar ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -47,7 +54,8 @@ font-family: "Yatra One", sans-serif;
     padding: 0;
     margin: 0;
 }
-#navbar li{
+
+#navbar li {
     color: burlywood;
     border-right: 2px solid black;
     font-size: 21px;
@@ -57,20 +65,20 @@ font-family: "Yatra One", sans-serif;
     text-align: center;
     position: relative;
 }
-#navbar a{
+
+#navbar a {
     color: burlywood;
     text-decoration: none;
 }
-#navbar a:hover{
+
+#navbar a:hover,
+#navbar li:hover {
     color: bisque;
-    transition: 150ms; 
-}
-#navbar li:hover{
     background-color: rgba(23, 22, 22, 0.728);
-    color: bisque;
     transition: 150ms;
 }
 
+/* Dropdown Menu */
 #content {
     display: none;
     background-color: rgba(38, 38, 38, 0.691);
@@ -82,118 +90,99 @@ font-family: "Yatra One", sans-serif;
     border: 2px solid black;
     box-shadow: 3px 3px 15px rgb(100, 8, 8);
 }
-#dropdown:hover #content{
+
+#dropdown:hover #content {
     display: block;
 }
-#content a{
+
+#content a {
     display: block;
     border-bottom: 2px solid black;
     padding: 15px 20px;
     text-align: left;
 }
-#content a:last-child{
+
+#content a:last-child {
     border-bottom: none;
 }
-#content a:hover{
+
+#content a:hover {
     background-color: rgba(46, 45, 45, 0.706);
 }
-#par1{
-    padding-top: 2em;
+
+/* Main Content Sections */
+#par1, #maindiv2, #maindiv3 {
+    background-color: rgba(37, 36, 36, 0.62);
     color: azure;
     font-size: 25px;
     text-align: center;
-}
-#maindiv{
-    display: flow-root;
-    background-color: rgba(37, 36, 36, 0.62);
-}
-#yt{
-    float: left;
+    padding: 15px;
     margin: 15px;
-    border: 2px solid rgb(81, 9, 9);
 }
-#line{
-    margin: 0;
-border: 3px solid rgb(177, 175, 175);
-}
-#maindiv2{
-    background-color: rgba(37, 36, 36, 0.62); 
-    color: azure;
-    font-size: 25px;
-    text-align: center; 
-    padding: 15px; 
-}
-#line2{
-    margin: 0;
-border: 3px solid rgb(177, 175, 175);
-}
-#maindiv3{
-    background-color: rgba(37, 36, 36, 0.62); 
-    color: azure;
-    font-size: 25px;
-    text-align: center; 
-    padding: 15px; 
-}
-#play{
+
+/* Play Button */
+#play {
     border: 1px solid sandybrown;
     border-radius: 30px;
     font-size: 20px;
     background-color: burlywood;
     color: rgb(91, 16, 16);
-    width: 300px; 
-    height: 50px;  
-    font-family: "Yatra One", sans-serif; 
+    width: 300px;
+    height: 50px;
+    font-family: "Yatra One", sans-serif;
     display: block;
     margin: 20px auto;
+    text-align: center;
 }
-#play:hover{
+
+#play:hover {
     background-color: rgb(189, 134, 61);
     font-weight: 900;
-    font-size: 20px;
     color: black;
     transition: 200ms;
     cursor: pointer;
 }
-#head4{
-    font-family: "Yatra One", sans-serif;
-}
-#head5{
-    font-family: "Yatra One", sans-serif;
-}
-.gallery img{
-    width: 500px;
-    height: 300px;
-}
-.gallery{
+
+/* Gallery */
+.gallery {
     align-items: center;
-    margin-left: 50px;
-    margin-bottom: 50px ;
+    margin: 0 15px 50px;
     display: inline-block;
     width: auto;
     border: 3px solid rgb(110, 24, 24);
 }
-.gallery .description{
+
+.gallery img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.gallery .description {
     border-top: 3px solid rgb(110, 24, 24);
     background-color: rgba(75, 72, 72, 0.595);
     color: wheat;
     padding: 10px;
     font-weight: 600;
     font-size: 25px;
+    text-align: center;
 }
-#footer{
+
+/* Footer */
+#footer {
     background-color: rgba(46, 46, 46, 0.9);
     color: azure;
     text-align: center;
     padding: 20px;
     border-top: 2px solid rgb(110, 24, 24);
 }
+
 #footer p {
     margin: 2px;
     font-size: 18px;
 }
 
-
-#footer a{
+#footer a {
     color: burlywood;
     text-decoration: none;
     margin: 0 15px;
@@ -202,4 +191,30 @@ border: 3px solid rgb(177, 175, 175);
 #footer a:hover {
     color: bisque;
     transition: color 150ms;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #title {
+        font-size: 24px;
+    }
+    
+    #play {
+        width: 80%;
+    }
+    
+    .gallery img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    #navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #navbar li {
+        padding: 10px;
+        font-size: 18px;
+    }
 }
